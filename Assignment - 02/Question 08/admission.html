@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Admission - Princeton University</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="img/logo.png" alt="Princeton University Logo" class="logo" />
+      <h1>University Admission Form</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="admission.html">Admission</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <h2>Apply for Admission</h2>
+      <form action="submit-admission.php" method="POST" class="booking-form">
+        <label for="full-name">Full Name:</label>
+        <input
+          type="text"
+          id="full-name"
+          name="full_name"
+          class="form-input"
+          required
+        />
+
+        <label for="email">Email Address:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="form-input"
+          required
+        />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" class="form-input" required />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" class="form-input" required />
+
+        <label for="address">Home Address:</label>
+        <textarea
+          id="address"
+          name="address"
+          class="form-input"
+          required
+        ></textarea>
+
+        <label for="course">Select Course:</label>
+        <select id="course" name="course" class="form-input" required>
+          <option value="">-- Select Course --</option>
+          <option value="computer-science">Computer Science</option>
+          <option value="mathematics">Mathematics</option>
+          <option value="financial-accounting">Financial Accounting</option>
+          <option value="business-economics">Business Economics</option>
+          <option value="sociology">Sociology</option>
+          <option value="english">English</option>
+        </select>
+
+        <label for="qualifications">Educational Qualifications:</label>
+        <textarea
+          id="qualifications"
+          name="qualifications"
+          class="form-input"
+          placeholder="List your academic qualifications..."
+          required
+        ></textarea>
+
+        <label for="documents">Upload Required Documents (PDF only):</label>
+        <input
+          type="file"
+          id="documents"
+          name="documents"
+          class="form-input"
+          accept=".pdf"
+          required
+        />
+
+        <label for="statement">Personal Statement:</label>
+        <textarea
+          id="statement"
+          name="statement"
+          class="form-input"
+          placeholder="Write a brief statement about why you want to join this course..."
+          required
+        ></textarea>
+
+        <button type="submit" class="submit-btn">Submit Application</button>
+      </form>
+    </div>
+
+    <footer>&copy; 2025 Princeton University, New Jersey</footer>
+  </body>
+</html>

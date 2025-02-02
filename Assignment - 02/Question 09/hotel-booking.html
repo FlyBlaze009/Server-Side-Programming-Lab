@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hotel Booking - Los Angeles Tourism</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./img/logo.png" alt="Los Angeles Logo" class="logo" />
+      <h1>Hotel Booking</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="heritage.html">Heritage</a></li>
+        <li><a href="hotel-booking.html">Hotel Booking</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <h2>Book Your Stay</h2>
+      <form action="submit-booking.php" method="post">
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+
+        <div class="form-group">
+          <label for="checkin">Check-in Date:</label>
+          <input type="date" id="checkin" name="checkin" required />
+        </div>
+
+        <div class="form-group">
+          <label for="checkout">Check-out Date:</label>
+          <input type="date" id="checkout" name="checkout" required />
+        </div>
+
+        <div class="form-group">
+          <label for="room">Room Type:</label>
+          <select id="room" name="room">
+            <option value="standard">Standard</option>
+            <option value="deluxe">Deluxe</option>
+            <option value="suite">Suite</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="guests">Number of Guests:</label>
+          <input type="text" id="guests" name="guests" required />
+        </div>
+
+        <button type="submit">Submit Booking</button>
+      </form>
+    </div>
+
+    <footer>&copy; 2025 Los Angeles Tourism</footer>
+  </body>
+</html>
